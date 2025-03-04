@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+            theme: {
+                    extend: {
+                        spacing: {
+                            13: '3.25rem',
+                        }, 
+                        fontFamily: {
+                            inter: ['Inter'],
+                        },
+                        colors: {
+                            wpu: '#bada55',
+                            kopi: '#c0ffee',
+                        },
+                    },
+                },
+            };
+        </script>
+        <title>Belajar TailwindCSS</title>
+    </head>
+    <body>
+        <h1 class="text-6xl font-bold text-center my-10">Mari Belajar 
+        <span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">TailwindCSS</span></h1>
+
+        <section class="mb-10 bg-gradient-to-br from-indigo-400 via-red-400 to-green-400">
+            <h2 class="text-3xl text-center">Spacing</h2>
+            <div class="m-13">Margin</div>
+            <div class="py-8">Padding</div>
+        </section>
+
+
+        <section class="mb-10 bg-yellow-200">
+            <h2 class="text-3xl text-center">Sizing</h2>
+            <div class="w-32 h-32 bg-kopi">Kotak 1</div>
+            <div class="max-w-xs min-h-screen bg-green-300">Kotak 2</div>
+        </section>
+
+        <section class="font-inter max-w-3xl mx-auto">
+            <h2 class="mb-2 text-4xl font-bold">Belajar Mengenal Typography pada TailwindCSS</h2>
+            <div class="mb-4 text-lg text-gray-500">
+                By <a href="#" class="text-gray-700 font-semibold">Octavia Nur Aisya</a> , 12 Juni 2025
+            </div>
+            <p class="mb-4">Lorem ipsum dolor sit amet <a href="#"
+            class="underline font-semibold text-blue-600">consectetur</a>  adipisicing elit. Est, et sapiente? Nisi quasi doloribus neque pariatur inventore. Quam earum, sint magni enim molestiae odit ex laborum animi, dolore vitae ullam illo temporibus accusantium molestias sit veniam! Suscipit sit dicta laboriosam perferendis voluptatum nihil nobis autem dolorum rerum illo, minus eaque.</p>
+            <blockquote class="mb-4 italic font-thin text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore accusamus, dicta dignissimos numquam veniam laborum ut quia libero rerum illum!</blockquote>
+            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestiae enim voluptatem quas. Laboriosam voluptates et cupiditate doloribus quos illum deleniti distinctio placeat, impedit odio fugiat, officiis tenetur molestiae eaque.</p>
+        </section>
+
+
+        <div class="max-w-xl h-96 bg-[#bada55] mx-auto mt-[42px] overflow-scroll bg-local" style="background-image: url('https://source.unsplash.com/1000x600?handphone');">
+            <p class="p-5 text-2xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate animi maxime libero accusantium! Quaerat fugiat voluptatibus corrupti, doloribus ex repellat enim? Praesentium tempora nemo reprehenderit et cupiditate fugit quasi quam, beatae dolorum odit aut ex, asperiores accusantium enim accusamus. Est, qui magnam? Neque ducimus quibusdam dolore voluptates voluptas officiis aspernatur dicta odit vel in. Quibusdam, ex vitae, corporis, quidem atque placeat vero expedita sed repellat distinctio fugiat. Voluptatem omnis ad cumque et. Nisi aperiam optio vitae. Cumque illum voluptas maxime iste quae accusamus ullam, atque omnis recusandae quia, iusto, nulla deserunt. Ea optio iusto cumque id incidunt doloribus ipsa veniam, ex laudantium, maiores in eveniet? Quibusdam temporibus pariatur vel error delectus quae nemo sapiente quos reprehenderit. Placeat nam inventore reprehenderit eum incidunt praesentium repellendus repudiandae numquam eaque eos tenetur ducimus magnam modi officia molestias repellat nihil earum, est ipsum pariatur, quidem optio quam! Harum, numquam inventore ut impedit corporis perferendis fugiat a esse. Optio sequi vitae iusto dolorem similique voluptate eos qui temporibus. Accusamus iure, maxime ipsa soluta velit, earum voluptatibus nostrum quaerat voluptatem libero sequi eaque, similique et eum sed assumenda quia cumque repudiandae dicta optio nisi maiores totam nam aperiam? Qui enim laboriosam est natus nobis non omnis!</p>
+        </div>
+
+
+        <div class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat bg-center" style="background-image: url(./img/1.png);"></div>
+
+        <div class="mb-96"></div>
+    </body>
+</html>
